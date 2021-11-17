@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 100%;
+
+}
+body{
+  font-family: Verdana,sans-serif;
+  background-color: #E6FDFF;
+}
+
+#wrapper{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+
+#title{
+  font-size: 200%;
+  text-align: left;
+  width: auto;
+  text-decoration: none;
+  color: black;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wide-text{
+  letter-spacing: 4px;
+}
+
+.page-img{
+  max-width: 100%;
+  height: auto;
+}
+
+.shadow{
+  box-shadow:0 2px 5px 0 rgba(0, 0, 0, 10%), 0 2px 10px 0 rgba(0, 0, 0, 12%);
+}
+
+.padding{
+  padding: 8px 16px;
+}
+
+.top-bar{
+  /*position: fixed;*/
+  z-index: inherit;
+  width: 100%;
+  overflow: hidden;
+}
+
+.black-on-white{
+  color: black;
+  background-color: white;
+}
+
+.nav-button{
+  text-decoration: none;
+  user-select: none;
+  color: black;
+
+}
+
+.top-bar .bar-item{
+  white-space: normal;
+}
+
+.top-bar{
+  display: block
+}
+
+.top-bar .right-nav{
+  float: right;
+  margin-right: 20px;
+}
+
+.top-bar .right-nav .bar-item{
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  padding: 8px 16px;
+}
+
+.bar-item .nav-button{
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+a:hover{
+  background-color: rgba(140, 240, 255, 50%);
+}
+a:active{
+  background-color: rgba(140, 240, 255, 90%);
+}

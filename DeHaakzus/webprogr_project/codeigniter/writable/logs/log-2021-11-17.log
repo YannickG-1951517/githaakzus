@@ -1,0 +1,61 @@
+CRITICAL - 2021-11-17 07:29:01 --> Undefined variable $data
+#0 /app/app/Controllers/Login.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(824): App\Controllers\Login->index()
+#2 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-17 09:42:37 --> Unclosed '{' on line 9
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/CodeIgniter.php(789): class_exists()
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-17 09:42:49 --> Unclosed '{' on line 9
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/CodeIgniter.php(789): class_exists()
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-17 13:04:45 --> Invalid file: login/create.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Login.php(38): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-17 13:05:00 --> Invalid file: login/createAcc.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Login.php(38): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-17 13:05:15 --> Invalid file: createAcc.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Login.php(38): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-17 13:18:03 --> Unmatched '}'
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/CodeIgniter.php(789): class_exists()
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

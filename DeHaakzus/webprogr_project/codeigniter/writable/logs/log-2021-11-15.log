@@ -1,0 +1,33 @@
+CRITICAL - 2021-11-15 08:24:36 --> syntax error, unexpected token ";", expecting "]"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/CodeIgniter.php(789): class_exists()
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-15 08:24:59 --> Class "App\Controllers\Controllers" not found
+#0 /app/system/Autoloader/Autoloader.php(264): include_once()
+#1 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 /app/system/CodeIgniter.php(789): class_exists()
+#5 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-11-15 08:25:12 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2021-11-15 08:25:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query()
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/app/Models/ProductModel.php(23): CodeIgniter\BaseModel->findAll()
+#5 /app/app/Controllers/Products.php(14): App\Models\ProductModel->getProducts()
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Products->index()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
