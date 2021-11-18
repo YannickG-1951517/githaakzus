@@ -17,7 +17,6 @@ body{
   line-height: 1.5rem;
 }
 
-
 #title{
   font-size: 200%;
   text-align: left;
@@ -52,7 +51,7 @@ body{
 }
 
 .top-bar{
-  /*position: fixed;*/
+  position: fixed;
   z-index: inherit;
   width: 100%;
   overflow: hidden;
@@ -95,6 +94,10 @@ body{
 .bar-item .nav-button{
   vertical-align: middle;
   overflow: hidden;
+}
+
+.top-margin{
+  margin-top: 60px;
 }
 
 a:hover{

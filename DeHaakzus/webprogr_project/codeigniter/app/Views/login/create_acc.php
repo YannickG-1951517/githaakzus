@@ -6,23 +6,23 @@
   </head>
   <body>
     <?= service('validation')->listErrors() ?>
-    <form action="Login/create" method="post">
+    <form action="/Login/create" method="post">
       <?= csrf_field() ?>
       <div class="form-group">
-        <label for="firstName">First name:</label>
-        <input type="text" class="form-control" id="firstName">
+        <label for="firstname">First name:</label>
+        <input type="text" class="form-control" name="firstname">
       </div>
       <div class="form-group">
         <label for="surname">Last name:</label>
-        <input type="text" class="form-control" id="surname">
+        <input type="text" class="form-control" name="surname">
       </div>
       <div class="form-group">
         <label for="email">Email address:</label>
-        <input type="email" class="form-control" id="email">
+        <input type="email" class="form-control" name="email">
       </div>
       <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd">
+        <label for="pword">Password:</label>
+        <input type="password" class="form-control" name="pword">
       </div>
       <div class="checkbox">
         <label><input type="checkbox"> Remember me</label>

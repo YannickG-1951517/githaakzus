@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>De Haakzus</title>
-    <link rel="stylesheet" href="CSS/general.css">
-    <link rel="stylesheet" href="CSS/Homepage.css">
+    <link rel="stylesheet" href="/CSS/general.css">
+    <link rel="stylesheet" href="/CSS/Homepage.css">
   </head>
-  <body style="background-image: url(Images/Clouds_Background.jpg)">
+  <body class="top-margin" style="background-image: url(/Images/Clouds_Background.jpg)">
     <header class="top-bar padding black-on-white shadow wide-text">
       <a href="/" id="title" class="nav-button"><strong>De Haakzus</strong></a>
       <div id="wrapper">

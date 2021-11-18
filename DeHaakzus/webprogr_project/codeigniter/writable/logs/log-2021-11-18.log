@@ -1,0 +1,16 @@
+ERROR - 2021-11-18 06:23:35 --> Column 'pword' cannot be null
+CRITICAL - 2021-11-18 06:23:35 --> Column 'pword' cannot be null
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#7 /app/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /app/app/Controllers/Login.php(31): CodeIgniter\BaseModel->save()
+#9 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#10 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
