@@ -15,6 +15,14 @@ class UserModel extends Model
 
 
 
+  public function getUser($email = false)
+  {
+    if ($email === false){
+      return $this->findAll();
+    }
+    return $this->where(['email' => $email])->first();
+  }
+
 }
 
 

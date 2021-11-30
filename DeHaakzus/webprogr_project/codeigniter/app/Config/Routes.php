@@ -39,7 +39,6 @@ $routes->get('createAcc', 'Login::create');
 $routes->get('profile', 'Profile::index');
 $routes->get('(:any)', 'Pages::view/$1');
 
-
 /*
  * --------------------------------------------------------------------
  * Additional Routing

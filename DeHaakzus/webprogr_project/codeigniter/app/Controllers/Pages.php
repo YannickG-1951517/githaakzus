@@ -23,4 +23,24 @@ class Pages extends Controller
       echo view('pages/' . $page, $data);
       echo view('templates/footer', $data);
     }
+
+
+    // public function loadHomepage($email = null)
+    // {
+    //   $model = model(UserModel::class);
+    //
+    //   $data['user'] = $model->getUser($email);
+    //
+    //   if (empty($data['user'])){
+    //     throw new \CodeIgniter\Exception\PageNotFoundException("Cannot find the user:" . $email);
+    //
+    //   }
+    //
+    //   $data['name'] = $data['user']['name'];
+    //
+    //   echo view('templates/header', $data);
+    //   echo view('pages/home', $data);
+    //   echo view('templates/footer', $data);
+    //
+    // }
 }

@@ -1,0 +1,14 @@
+CRITICAL - 2021-11-28 05:24:29 --> Undefined variable $config
+#0 /app/app/Controllers/Login.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#2 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-28 05:26:32 --> Undefined variable $config
+#0 /app/app/Controllers/Login.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#2 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

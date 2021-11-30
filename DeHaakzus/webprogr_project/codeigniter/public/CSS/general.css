@@ -96,14 +96,11 @@ body{
   overflow: hidden;
 }
 
-.top-margin{
-  margin-top: 60px;
-}
 
 a:hover{
   background-color: rgba(140, 240, 255, 50%);
   border-radius: 4px;
-  text-decoration: none !important; 
+  text-decoration: none !important;
 }
 a:active{
   background-color: rgba(140, 240, 255, 90%);
