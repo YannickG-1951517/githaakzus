@@ -18,12 +18,14 @@ class Login extends Controller
   {
     $model = model(UserModel::class);
 
-    if ($this->request->getMethod() === 'post' && $this->validate([
-        'email' => 'required|min_length[3]|max_length[255]|is_unique[users.email]',
-        'pword'  => 'required|min_length[3]|max_length[32]',
-        'surname' => 'required|max_length[32]',
-        'firstname' => 'required|max_length[32]',
-    ], $errors)) {
+    $rules = [
+      'email' => 'required|min_length[3]|max_length[255]|is_unique[users.email]',
+      'pword'  => 'required|min_length[3]|max_length[32]',
+      'surname' => 'required|max_length[32]',
+      'firstname' => 'required|max_length[32]',
+    ];
+
+    if ($this->request->getMethod() === 'post' && $this->validate($rules)) {
         $model->save([
             'email' => $this->request->getPost('email'),
             'pword'  => $this->request->getPost('pword'),
@@ -31,11 +33,9 @@ class Login extends Controller
             'firstname'  => $this->request->getPost('firstname'),
         ]);
 
-        //$session = \Config\Services::session($config);
 
-        echo view('templates/header');
-        echo view('profile/profile');
-        echo view('templates/footer');
+        return redirect()->to('home');
+
     }else{
       echo view('templates/header');
       echo view('login/create_acc');
@@ -46,6 +46,7 @@ class Login extends Controller
   public function validateLogin()
   {
     $model = model(UserModel::class);
+    $session = session();
 
     $errors = [
       'pword' => [
@@ -54,13 +55,15 @@ class Login extends Controller
     ];
 
     if ($this->request->getMethod() === 'post' && $this->validate([
-        'email' => 'required|min_length[3]|max_length[255]|is_unique[users.email]',
+        'email' => 'required|min_length[3]|max_length[255]',
         'pword'  => 'required|min_length[3]|max_length[32]',
     ])) {
-      echo view('templates/header');
-      echo view('login/create_acc');
-      echo view('templates/footer');
+
+      $session->set('user', $model->getUser($this->request->getPost('email')));
+
+      return redirect()->to('profile');
     }
+    return redirect()->to('home');
 
   }
 }

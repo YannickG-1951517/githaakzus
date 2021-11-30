@@ -54,7 +54,6 @@ body{
   position: fixed;
   z-index: inherit;
   width: 100%;
-  overflow: hidden;
 }
 
 .black-on-white{
