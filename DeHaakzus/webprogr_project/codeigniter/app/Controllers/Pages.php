@@ -13,6 +13,11 @@ class Pages extends Controller
 
     public function view($page = 'home')
     {
+      $session = session();
+      if ($session->get('logged-in') == null){
+        $session->set('logged-in', false);
+      }
+
       if (! is_file(APPPATH . 'Views/pages/' . $page . '.php')) {
         throw new \CodeIgniter\Exceptions\PageNotFoundException($page);
       }
@@ -24,23 +29,4 @@ class Pages extends Controller
       echo view('templates/footer', $data);
     }
 
-
-    // public function loadHomepage($email = null)
-    // {
-    //   $model = model(UserModel::class);
-    //
-    //   $data['user'] = $model->getUser($email);
-    //
-    //   if (empty($data['user'])){
-    //     throw new \CodeIgniter\Exception\PageNotFoundException("Cannot find the user:" . $email);
-    //
-    //   }
-    //
-    //   $data['name'] = $data['user']['name'];
-    //
-    //   echo view('templates/header', $data);
-    //   echo view('pages/home', $data);
-    //   echo view('templates/footer', $data);
-    //
-    // }
 }

@@ -52,7 +52,7 @@ body{
 
 .top-bar{
   position: fixed;
-  z-index: inherit;
+  
   width: 100%;
 }
 

@@ -6,7 +6,9 @@
   // echo "<pre>";
   // print_r($session->get('user'));
 
-  echo $session->get('user')['firstname'];
+  if ($session->get('user') != null){
+    echo $session->get('user')['firstname'];
+  }
 
 
 

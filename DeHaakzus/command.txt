@@ -4,3 +4,6 @@ dehaakzus: drB4N39Xpacx
 
 
 CREATE TABLE products ( id INT UNSIGNED NOT NULL AUTO_INCREMENT, name VARCHAR(128) NOT NULL, slug VARCHAR(128) NOT NULL, price VARCHAR(128) NOT NULL, body TEXT NOT NULL, PRIMARY KEY (id), KEY slug (slug) ); 
+
+
+docker run -p "8080:80" -v %cd%/"Most Useless Folder"/Informatica/GitRepos/githaakzus/DeHaakZus/webprogr_project/codeigniter:/app -v %cd%/"Most Useless Folder"/Informatica/GitRepos/githaakzus/DeHaakZus/webprogr_project/mysql:/var/lib/mysql dehaakzus

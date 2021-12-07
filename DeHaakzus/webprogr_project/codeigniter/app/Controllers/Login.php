@@ -9,9 +9,9 @@ class Login extends Controller
 {
   public function index()
   {
-      echo view('templates/header');
-      echo view('login/loginForm');
-      echo view('templates/footer');
+    echo view('templates/header');
+    echo view('login/loginForm');
+    echo view('templates/footer');
   }
 
   public function create()
@@ -43,9 +43,9 @@ class Login extends Controller
     }
   }
 
-  public function validateLogin()
+  public function login()
   {
-    $model = model(UserModel::class);
+    /*$model = model(UserModel::class);
     $session = session();
 
     $errors = [
@@ -55,15 +55,37 @@ class Login extends Controller
     ];
 
     if ($this->request->getMethod() === 'post' && $this->validate([
-        'email' => 'required|min_length[3]|max_length[255]',
-        'pword'  => 'required|min_length[3]|max_length[32]',
-    ])) {
+      'email' => 'required|min_length[3]|max_length[255]',
+      'pword'  => 'required|min_length[3]|max_length[32]',
+      ])) {
 
-      $session->set('user', $model->getUser($this->request->getPost('email')));
+        $session->set('user', $model->getUser($this->request->getPost('email')));
 
-      return redirect()->to('profile');
+        return redirect()->to('profile');
+      }*/
+      return redirect()->to('home');
+
     }
-    return redirect()->to('home');
 
-  }
+
+    public function logout()
+    {
+      $session = session();
+      $session->destroy();
+    }
+
+    public function chooseLoginOrLogout()
+    {
+
+
+      $session = session();
+      if ($session->get('logged-in') == true){
+        $this->logout();
+      }else{
+        return redirect()->to('home');
+        $this->login();
+      }
+    }
+
+
 }
