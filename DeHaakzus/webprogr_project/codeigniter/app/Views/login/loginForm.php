@@ -5,7 +5,7 @@
       <div class="card border-0 shadow rounded-3 my-5">
         <div class="card-body p-4 p-sm-5">
           <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
-          <form action="/Login/chooseLoginOrLogout" method="post">
+          <form action="/Login/login" method="post">
             <?= csrf_field() ?>
             <div class="form-floating mb-3">
               <input type="email" class="form-control" name="email" placeholder="name@example.com">

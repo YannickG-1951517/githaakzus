@@ -34,7 +34,7 @@ class Login extends Controller
         ]);
 
 
-        return redirect()->to('home');
+        return redirect()->to('login');
 
     }else{
       echo view('templates/header');
@@ -45,7 +45,7 @@ class Login extends Controller
 
   public function login()
   {
-    /*$model = model(UserModel::class);
+    $model = model(UserModel::class);
     $session = session();
 
     $errors = [
@@ -59,10 +59,11 @@ class Login extends Controller
       'pword'  => 'required|min_length[3]|max_length[32]',
       ])) {
 
+        $session->set('logged-in', true);
         $session->set('user', $model->getUser($this->request->getPost('email')));
 
         return redirect()->to('profile');
-      }*/
+      }
       return redirect()->to('home');
 
     }
@@ -71,19 +72,23 @@ class Login extends Controller
     public function logout()
     {
       $session = session();
-      $session->destroy();
+      $session->set('logged-in', false);
+
+      echo view('templates/header');
+      echo view('login/loginForm');
+      echo view('templates/footer');
     }
 
     public function chooseLoginOrLogout()
     {
-
-
       $session = session();
+      $session->set('debug', 'test');
       if ($session->get('logged-in') == true){
+        $session->set('debug', 'logout');
         $this->logout();
       }else{
-        return redirect()->to('home');
-        $this->login();
+        $session->set('debug', 'login');
+        $this->index();
       }
     }
 

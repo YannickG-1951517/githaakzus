@@ -3,11 +3,26 @@
     <em>&copy; 2021</em><br>
     <em>&copy; 2021</em><br>
     <em>&copy; 2021</em><br>
+    <?php
+    $session = session();
+    if ($session->get('logged-in') == true){
+      echo $session->get('user')['firstname'];
+    }
+     ?><br>
+    <em>&copy; 2021</em><br>
+    <em>&copy; 2021</em><br>
+    <?php
+      $session = session();
+      if ($session->get('logged-in') == true){
+        echo "user is logged in";
+      }else{
+        echo "user is not logged in";
+      }
+    ?><br>
     <em>&copy; 2021</em><br>
     <em>&copy; 2021</em><br>
     <em>&copy; 2021</em><br>
-    <em>&copy; 2021</em><br>
-    <em>&copy; 2021</em><br>
+    <?php echo $session->get('debug'); ?><br>
     <em>&copy; 2021</em><br>
     <em>&copy; 2021</em><br>
     <em>&copy; 2021</em><br>

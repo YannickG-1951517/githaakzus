@@ -32,11 +32,14 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->match(['get', 'post'], 'login/create_acc', 'Login::create');
+$routes->get('home', 'Pages::view/$1');
 $routes->get('/', 'Pages::view');
+$routes->get('determineLoginStatus', 'Login::chooseLoginOrLogout');
 $routes->get('products', 'Products::index');
 $routes->get('login', 'Login::index');
 $routes->get('createAcc', 'Login::create');
 $routes->get('profile', 'Profile::index');
+$routes->get('products/(:segment)', 'Products::view/$1');
 $routes->get('(:any)', 'Pages::view/$1');
 
 /*
