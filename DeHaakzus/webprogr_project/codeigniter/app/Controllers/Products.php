@@ -36,6 +36,30 @@ class Products extends Controller
       echo view('products/singleProduct', $data);
       echo view('templates/footer', $data);
     }
+
+    public function personalProducts()
+    {
+      $userModel = model(UserModel::class);
+      $productModel = model(ProductModel::class);
+      $session = session();
+
+      $products = $productModel->getProducts();
+
+      foreach ($products as $product) {
+        if ($product['makerID'] == $session->get('user')['id']){
+          $privateProducts[] = $product;
+        }
+      }
+
+      $data = [
+        'products' => $privateProducts,
+      ];
+
+      echo view('templates/header');
+      echo view('products/personalProductList', $data);
+      echo view('templates/footer');
+
+    }
 }
 
 

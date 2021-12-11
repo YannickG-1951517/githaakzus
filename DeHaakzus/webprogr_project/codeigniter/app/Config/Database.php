@@ -24,6 +24,7 @@ class Database extends Config
      * @var string
      */
     public $defaultGroup = 'default';
+    public $userDatabaseGroup = 'userDatabase';
 
     /**
      * The default database connection.
@@ -49,6 +50,33 @@ class Database extends Config
         'failover' => [],
         'port'     => 3306,
     ];
+
+    /**
+     * The user database connection.
+     *
+     * @var array
+     */
+    public $userDatabase = [
+        'DSN'      => '',
+        'hostname' => 'localhost',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'dehaakzus',
+        'DBDriver' => 'MySQLi',
+        'DBPrefix' => '',
+        'pConnect' => false,
+        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'charset'  => 'utf8',
+        'DBCollat' => 'utf8_general_ci',
+        'swapPre'  => '',
+        'encrypt'  => false,
+        'compress' => false,
+        'strictOn' => false,
+        'failover' => [],
+        'port'     => 3306,
+    ];
+
+
 
     /**
      * This database connection is used when

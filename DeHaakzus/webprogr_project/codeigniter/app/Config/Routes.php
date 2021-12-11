@@ -36,6 +36,7 @@ $routes->get('home', 'Pages::view/$1');
 $routes->get('/', 'Pages::view');
 $routes->get('determineLoginStatus', 'Login::chooseLoginOrLogout');
 $routes->get('products', 'Products::index');
+$routes->get('personalProducts', 'Products::personalProducts');
 $routes->get('login', 'Login::index');
 $routes->get('createAcc', 'Login::create');
 $routes->get('profile', 'Profile::index');

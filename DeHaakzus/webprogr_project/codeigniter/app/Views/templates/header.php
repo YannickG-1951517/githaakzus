@@ -24,18 +24,28 @@
                 Profiel
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">
+                <li><a class="dropdown-item <?php
+                $session = session();
+                if ($session->get('logged-in') == false)
+                {echo "d-none";} ?>" href="profile">
                   <?php
-                  $session = session();
                   if ($session->get('logged-in') == true){
                     echo $session->get('user')['firstname'];
                   }
                    ?>
                 </a></li>
+                <li class="
+                <?php
+                  if ($session->get('logged-in') == false || $session->get('user')['Admin'] == false)
+                    {
+                      echo "d-none";
+                    }
+                ?>">
+                  <a class="dropdown-item" href="personalProducts">Mijn producten</a>
+                </li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">
+                <li><a class="dropdown-item" href="determineLoginStatus">
                   <?php
-                    $session = session();
                     if ($session->get('logged-in') == true){
                       echo "Logout";
                     }else{
@@ -56,5 +66,4 @@
         </div>
       </div>
     </nav>
-  </body>
-</html>
+  

@@ -1,0 +1,269 @@
+CRITICAL - 2021-12-11 04:36:44 --> Undefined variable $session
+#0 /app/app/Views/profile/profile.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(18): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-11 05:02:47 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Products.php(49): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-11 05:03:50 --> syntax error, unexpected identifier "button", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Products.php(49): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-11 05:04:46 --> syntax error, unexpected token "echo", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Products.php(49): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-11 07:23:45 --> Trying to access array offset on value of type null
+#0 /app/app/Controllers/Products.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#2 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 07:24:11 --> Trying to access array offset on value of type null
+#0 /app/app/Views/profile/profile.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(18): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-11 07:30:43 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 07:33:41 --> syntax error, unexpected variable "$userDatabase", expecting "function" or "const"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/Config/Factories.php(136): class_exists()
+#4 /app/system/Config/Factories.php(106): CodeIgniter\Config\Factories::locateClass()
+#5 /app/system/Common.php(783): CodeIgniter\Config\Factories::__callStatic()
+#6 /app/app/Controllers/Products.php(43): model()
+#7 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#8 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-11 07:36:06 --> syntax error, unexpected variable "$userDatabase", expecting "function" or "const"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/Config/Factories.php(136): class_exists()
+#4 /app/system/Config/Factories.php(106): CodeIgniter\Config\Factories::locateClass()
+#5 /app/system/Common.php(783): CodeIgniter\Config\Factories::__callStatic()
+#6 /app/app/Controllers/Products.php(43): model()
+#7 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#8 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-11 07:36:13 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 07:36:20 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 07:36:33 --> users is not a valid database connection group.
+#0 /app/app/Models/ProductModel.php(31): CodeIgniter\Database\Config::connect()
+#1 /app/app/Controllers/Products.php(46): App\Models\ProductModel->getProductsFromMaker()
+#2 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#3 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-11 07:39:30 --> Cannot redeclare Config\Database::$userDatabase
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 07:40:16 --> Cannot redeclare Config\Database::$userDatabase
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 07:40:39 --> Cannot redeclare Config\Database::$userDatabase
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 07:40:44 --> Cannot redeclare Config\Database::$userDatabase
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 07:47:45 --> Undefined variable $userDatabase
+#0 /app/app/Views/products/personalProductList.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Products.php(49): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-11 07:47:56 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2021-12-11 07:47:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/app/Views/products/personalProductList.php(29): CodeIgniter\Database\BaseConnection->query()
+#2 /app/system/View/View.php(214): include('...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#5 /app/app/Controllers/Products.php(49): view()
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-11 07:47:58 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2021-12-11 07:47:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/app/Views/products/personalProductList.php(29): CodeIgniter\Database\BaseConnection->query()
+#2 /app/system/View/View.php(214): include('...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#5 /app/app/Controllers/Products.php(49): view()
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-11 07:48:24 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2021-12-11 07:48:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/app/Views/products/personalProductList.php(29): CodeIgniter\Database\BaseConnection->query()
+#2 /app/system/View/View.php(214): include('...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#5 /app/app/Controllers/Products.php(49): view()
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-11 07:48:52 --> No database selected
+CRITICAL - 2021-12-11 07:48:52 --> No database selected
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Views/products/personalProductList.php(29): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/View/View.php(214): include('...')
+#5 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#7 /app/app/Controllers/Products.php(49): view()
+#8 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#9 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-12-11 07:49:02 --> Error connecting to the database: Unknown database 'users'
+CRITICAL - 2021-12-11 07:49:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'users'
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/app/Views/products/personalProductList.php(29): CodeIgniter\Database\BaseConnection->query()
+#2 /app/system/View/View.php(214): include('...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#5 /app/app/Controllers/Products.php(49): view()
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-11 07:49:45 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Products.php(49): view()
+#4 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#5 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-11 07:50:46 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Products.php(49): view()
+#4 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#5 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-11 07:51:04 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Products.php(49): view()
+#4 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#5 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-11 07:58:40 --> Undefined constant "App\Controllers\id"
+#0 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#1 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-11 08:01:12 --> Array to string conversion
+#0 /app/app/Controllers/Products.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#2 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 08:01:25 --> Array to string conversion
+#0 /app/app/Controllers/Products.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#2 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 08:01:35 --> Cannot use [] for reading
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 08:01:58 --> Array to string conversion
+#0 /app/app/Controllers/Products.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#2 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 08:05:39 --> Array to string conversion
+#0 /app/app/Controllers/Products.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#2 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 08:09:03 --> syntax error, unexpected token "echo"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/CodeIgniter.php(789): class_exists()
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

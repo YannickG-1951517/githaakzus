@@ -11,6 +11,7 @@ class ProductModel extends Model
 {
   protected $table = 'products';
 
+
   protected $allowedFields = ['name', 'slug', 'price', 'body'];
 
 
@@ -24,6 +25,13 @@ class ProductModel extends Model
     }
     return $this->where(['slug' => $slug])->first();
   }
+
+  public function getProductsFromMaker($id)
+  {
+
+    return $this->where(['makerID' => $id])->first();
+  }
+
 
 
 

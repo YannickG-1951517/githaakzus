@@ -73,6 +73,7 @@ class Login extends Controller
     {
       $session = session();
       $session->set('logged-in', false);
+      $session->destroy();
 
       echo view('templates/header');
       echo view('login/loginForm');

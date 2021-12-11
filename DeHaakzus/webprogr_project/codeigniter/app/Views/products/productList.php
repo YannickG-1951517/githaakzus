@@ -1,5 +1,3 @@
-<h2><?= esc($name) ?></h2>
-
 <div class="container">
   <div class="row g-3">
       <?php if (! empty($products) && is_array($products)): ?>

@@ -21,10 +21,10 @@
                 Remember password
               </label>
             </div> -->
-            <div class="d-grid float-left">
+            <div class="d-grid float-start">
               <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign in</button>
             </div>
-            <div class="btn text-uppercase fw-bold float-right">
+            <div class="btn text-uppercase fw-bold float-end">
               <a href="createAcc">Create Account</a>
             </div>
           </form>

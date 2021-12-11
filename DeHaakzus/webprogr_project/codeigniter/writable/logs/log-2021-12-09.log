@@ -1,0 +1,118 @@
+CRITICAL - 2021-12-09 13:08:07 --> syntax error, unexpected token ";", expecting ")"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/CodeIgniter.php(789): class_exists()
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 13:09:37 --> Undefined variable $name
+#0 /app/app/Views/products/productList.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Products.php(49): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Products->personalProducts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-09 13:16:28 --> Undefined array key "admin"
+#0 /app/app/Views/templates/header.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(17): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-09 13:17:10 --> Undefined array key "Admin"
+#0 /app/app/Views/templates/header.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(17): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-09 13:17:25 --> Undefined array key "Admin"
+#0 /app/app/Views/templates/header.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(27): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Pages->view()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-09 13:19:57 --> syntax error, unexpected token "class"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Profile.php(17): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 13:21:22 --> syntax error, unexpected identifier "d", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Profile.php(17): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 13:21:41 --> syntax error, unexpected identifier "d", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Profile.php(17): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 13:21:48 --> syntax error, unexpected identifier "d", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Profile.php(17): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 13:22:29 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Profile.php(17): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 13:22:44 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Profile.php(17): view()
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 13:24:45 --> Undefined variable $session
+#0 /app/app/Views/templates/header.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(17): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
