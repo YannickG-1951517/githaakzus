@@ -13,6 +13,11 @@ class ProductImageModel extends Model
   protected $allowedFields = ['product_id', 'image'];
 
 
+  public function getImageByProductId($id)
+  {
+    return $this->where(['product_id' => $id])->first();
+  }
+
 
 
 
