@@ -14,6 +14,10 @@ class UserModel extends Model
   protected $allowedFields = ['email', 'pword', 'surname', 'firstname'];
 
 
+  public function getUserById($id)
+  {
+    return $this->where(['id' => $id])->first();
+  }
 
   public function getUser($email)
   {

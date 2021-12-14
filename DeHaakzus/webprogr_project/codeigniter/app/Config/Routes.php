@@ -34,13 +34,21 @@ $routes->setAutoRoute(true);
 $routes->match(['get', 'post'], 'login/create_acc', 'Login::create');
 $routes->get('home', 'Pages::view/$1');
 $routes->get('/', 'Pages::view');
-$routes->get('determineLoginStatus', 'Login::chooseLoginOrLogout');
+
 $routes->get('products', 'Products::index');
 $routes->get('personalProducts', 'Products::personalProducts');
+$routes->get('addProduct', 'Products::addProductPage');
+$routes->get('products/(:segment)', 'Products::view/$1');
+
+$routes->get('determineLoginStatus', 'Login::chooseLoginOrLogout');
 $routes->get('login', 'Login::index');
 $routes->get('createAcc', 'Login::create');
+
 $routes->get('profile', 'Profile::index');
-$routes->get('products/(:segment)', 'Products::view/$1');
+$routes->get('messages', 'Profile::messages');
+$routes->get('newMessage', 'Profile::newMessagePage');
+
+
 $routes->get('(:any)', 'Pages::view/$1');
 
 /*

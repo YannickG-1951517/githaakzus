@@ -17,34 +17,36 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="products">Producten</a>
+              <a class="nav-link" href="/products">Producten</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Profiel
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item <?php
-                $session = session();
-                if ($session->get('logged-in') == false)
-                {echo "d-none";} ?>" href="profile">
-                  <?php
-                  if ($session->get('logged-in') == true){
-                    echo $session->get('user')['firstname'];
-                  }
-                   ?>
-                </a></li>
-                <li class="
-                <?php
-                  if ($session->get('logged-in') == false || $session->get('user')['Admin'] == false)
-                    {
-                      echo "d-none";
+                <div class="<?php
+                    $session = session();
+                    if ($session->get('logged-in') == false || $session->get('user')['Admin'] == false)
+                      {
+                        echo "d-none";
+                      }
+                  ?>">
+                  <li><a class="dropdown-item" href="/profile">
+                    <?php
+                    if ($session->get('logged-in') == true){
+                      echo $session->get('user')['firstname'];
                     }
-                ?>">
-                  <a class="dropdown-item" href="personalProducts">Mijn producten</a>
-                </li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="determineLoginStatus">
+                    ?>
+                  </a></li>
+                  <li>
+                    <a class="dropdown-item" href="/personalProducts">Mijn producten</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/messages">Berichten</a>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                </div>
+                <li><a class="dropdown-item" href="/determineLoginStatus">
                   <?php
                     if ($session->get('logged-in') == true){
                       echo "Logout";

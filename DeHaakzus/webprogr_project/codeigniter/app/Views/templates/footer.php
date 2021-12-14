@@ -6,16 +6,16 @@
     echo $session->get('user')['firstname']." is logged in";
   }
   ?><br>
-  <?php
+  <!-- <?php
   $session = session();
   if ($session->get('logged-in') == true){
     echo "user is logged in";
   }else{
     echo "user is not logged in";
   }
-  ?><br>
+  ?><br> -->
 
-  <?php echo $session->get('debug'); ?><br>
+  <!-- <?php echo $session->get('debug'); ?><br> -->
   <em>&copy; 2021</em><br>
 </footer>
 

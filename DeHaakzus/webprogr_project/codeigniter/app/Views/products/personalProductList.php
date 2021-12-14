@@ -1,5 +1,5 @@
-<div class="container">
-  <button class="btn btn-light mt-3"type="button" name="button">Product toevoegen</button>
+<div class="container bg-light">
+  <a class="btn btn-light btn-outline-primary mt-3 mb-3" href="addProduct">Product toevoegen</a>
   <div class="row g-3">
       <?php if (! empty($products) && is_array($products)): ?>
         <?php foreach ($products as $product): ?>

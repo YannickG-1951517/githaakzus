@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container bg-light">
   <div class="row g-3">
       <?php if (! empty($products) && is_array($products)): ?>
         <?php foreach ($products as $product): ?>

@@ -2,7 +2,8 @@
 
 namespace App\Controllers;
 
-use App\Models\NewsModel;
+use App\Models\ProductImageModel;
+use App\Models\ProductModel;
 use CodeIgniter\Controller;
 
 class Products extends Controller
@@ -15,9 +16,9 @@ class Products extends Controller
         'name' => 'tempname',
       ];
 
-      echo view('templates/header', $data);
+      echo view('templates/header');
       echo view('products/productList', $data);
-      echo view('templates/footer', $data);
+      echo view('templates/footer');
     }
 
 
@@ -32,14 +33,13 @@ class Products extends Controller
 
       $data['name'] = $data['products']['name'];
 
-      echo view('templates/header', $data);
+      echo view('templates/header');
       echo view('products/singleProduct', $data);
-      echo view('templates/footer', $data);
+      echo view('templates/footer');
     }
 
     public function personalProducts()
     {
-      $userModel = model(UserModel::class);
       $productModel = model(ProductModel::class);
       $session = session();
 
@@ -58,6 +58,48 @@ class Products extends Controller
       echo view('templates/header');
       echo view('products/personalProductList', $data);
       echo view('templates/footer');
+
+    }
+
+    public function addProductPage()
+    {
+      echo view('templates/header');
+      echo view('products/addProduct');
+      echo view('templates/footer');
+    }
+
+    public function createProduct()
+    {
+      $imageModel = model(ProductImageModel::class);
+      $model = model(ProductModel::class);
+      $session = session();
+
+      $file = $this->request->getFile('inputImage');
+      if ($file->isValid() && !$file->hasMoved())
+      {
+        $newName = $file->getRandomName();
+        $file->move(WRITEPATH.'uploads/', $newName);
+      }
+
+      $data = [
+        'name' => $this->request->getPost('name'),
+        'slug'  => url_title($this->request->getPost('name'), '-', true),
+        'price' => $this->request->getPost('price'),
+        'body' => $this->request->getPost('description'),
+        'makerID' => 3,
+      ];
+
+      $model->save($data);
+
+      
+      echo view('templates/header');
+      echo view('products/addProduct');
+      echo view('templates/footer');
+
+
+      
+      
+
 
     }
 }
