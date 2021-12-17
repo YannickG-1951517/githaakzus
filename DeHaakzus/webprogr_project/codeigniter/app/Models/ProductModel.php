@@ -12,7 +12,7 @@ class ProductModel extends Model
   protected $table = 'products';
 
 
-  protected $allowedFields = ['name', 'slug', 'price', 'body'];
+  protected $allowedFields = ['name', 'slug', 'price', 'body', 'makerID'];
 
 
 /** function to return one or all products

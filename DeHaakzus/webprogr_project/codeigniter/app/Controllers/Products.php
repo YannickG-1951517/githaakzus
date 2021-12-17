@@ -32,13 +32,13 @@ class Products extends Controller
     public function view($slug = null)
     {
       $model = model(ProductModel::class);
-      $data['products'] = $model->getProducts($slug);
+      $imageModel = model(ProductImageModel::class);
 
-      if (empty($data['products'])){
-        throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the product in database: ' . $slug);
-      }
+      $data = [
+        'product' => $model->getProducts($slug),
+        'image' => $imageModel->getImageByProductId($model->getProducts($slug)['id']),
+      ];
 
-      $data['name'] = $data['products']['name'];
 
       echo view('templates/header');
       echo view('products/singleProduct', $data);
@@ -91,7 +91,7 @@ class Products extends Controller
       $model = model(ProductModel::class);
       $session = session();
 
-      
+
       $data = [
         'name' => $this->request->getPost('name'),
         'slug'  => url_title($this->request->getPost('name'), '-', true),
@@ -99,16 +99,16 @@ class Products extends Controller
         'body' => $this->request->getPost('description'),
         'makerID' => $session->get('user')['id'],
       ];
-      
+
       $model->save($data);
-      
+
       $file = $this->request->getFile('inputImage');
       if ($file->isValid() && !$file->hasMoved())
       {
         $newName = $file->getRandomName();
         $file->move('uploads/', $newName);
       }
-      
+
       $imageData = [
         'image' => $newName,
         'product_id' => $model->getProducts(url_title($this->request->getPost('name'), '-', true))['id'],
@@ -117,7 +117,7 @@ class Products extends Controller
       $imageModel->save($imageData);
 
 
-      
+
       echo view('templates/header');
       echo view('products/addProduct');
       echo view('templates/footer');

@@ -24,16 +24,20 @@
                 Profiel
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <div class="<?php
+                <div class="
+                <?php
                     $session = session();
-                    if ($session->get('logged-in') == false || $session->get('user')['Admin'] == false)
-                      {
-                        echo "d-none";
-                      }
-                  ?>">
+                    if ($session->get('logged-in') && !$session->get('user')['Admin'])
+                    {
+                      echo "d-none";
+                    }elseif(!$session->get('logged-in')){
+                      echo "d-none";
+                    }
+                ?>
+                ">
                   <li><a class="dropdown-item" href="/profile">
                     <?php
-                    if ($session->get('logged-in') == true){
+                    if ($session->get('logged-in')){
                       echo $session->get('user')['firstname'];
                     }
                     ?>
@@ -48,17 +52,17 @@
                 </div>
                 <li><a class="dropdown-item" href="/determineLoginStatus">
                   <?php
-                    if ($session->get('logged-in') == true){
+                    if ($session->get('logged-in')){
                       echo "Logout";
                     }else{
                       echo "Login";
                     }
-                  ?>
+                   ?>
                 </a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Winkelwagen</a>
+              <a class="nav-link <<?php if ($session->get('logged-in') == true){echo "disabled";} ?>" href="#" tabindex="-1" aria-disabled="true">Winkelwagen</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -68,4 +72,3 @@
         </div>
       </div>
     </nav>
-  
