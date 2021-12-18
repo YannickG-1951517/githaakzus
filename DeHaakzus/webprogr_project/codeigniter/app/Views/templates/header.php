@@ -24,9 +24,16 @@
                 Profiel
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/profile">
+                  <?php
+                  $session = session();
+                  if ($session->get('logged-in')){
+                    echo $session->get('user')['firstname'];
+                  }
+                  ?>
+                </a></li>
                 <div class="
                 <?php
-                    $session = session();
                     if ($session->get('logged-in') && !$session->get('user')['Admin'])
                     {
                       echo "d-none";
@@ -35,21 +42,17 @@
                     }
                 ?>
                 ">
-                  <li><a class="dropdown-item" href="/profile">
-                    <?php
-                    if ($session->get('logged-in')){
-                      echo $session->get('user')['firstname'];
-                    }
-                    ?>
-                  </a></li>
                   <li>
                     <a class="dropdown-item" href="/personalProducts">Mijn producten</a>
                   </li>
+                  <li><hr class="dropdown-divider"></li>
+                </div>
+                <?php if($session->get('logged-in')): ?>
                   <li>
                     <a class="dropdown-item" href="/messages">Berichten</a>
                   </li>
-                  <li><hr class="dropdown-divider"></li>
-                </div>
+                  <li><hr class="dropdown-divider"></li>                  
+                <?php endif ?>
                 <li><a class="dropdown-item" href="/determineLoginStatus">
                   <?php
                     if ($session->get('logged-in')){
@@ -62,7 +65,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link <<?php if ($session->get('logged-in') == true){echo "disabled";} ?>" href="#" tabindex="-1" aria-disabled="true">Winkelwagen</a>
+              <a class="nav-link <?php if (!$session->get('logged-in')){echo "disabled";} ?>" href="/cart" tabindex="-1" aria-disabled="true">Winkelwagen</a>
             </li>
           </ul>
           <form class="d-flex">

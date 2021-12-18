@@ -26,6 +26,11 @@ class ProductModel extends Model
     return $this->where(['slug' => $slug])->first();
   }
 
+  public function getProductById($id)
+  {
+    return $this->where(['id' => $id])->first();
+  }
+
   public function getProductsFromMaker($id)
   {
 

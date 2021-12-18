@@ -17,9 +17,10 @@ class Login extends Controller
   public function create()
   {
     $model = model(UserModel::class);
+    $profilePictureModel = model(ProfileImageModel::class);
 
     $rules = [
-      'email' => 'required|min_length[3]|max_length[255]|is_unique[users.email]',
+      'email' => 'required|min_length[3]|max_length[255]|is_unique[users.email]|valid_email',
       'pword'  => 'required|min_length[3]|max_length[32]',
       'surname' => 'required|max_length[32]',
       'firstname' => 'required|max_length[32]',
@@ -33,6 +34,17 @@ class Login extends Controller
             'firstname'  => $this->request->getPost('firstname'),
         ]);
 
+        $file = $this->request->getFile('profileImage');
+        if ($file->isValid() && !$file->hasMoved())
+        {
+          $newName = $file->getRandomName();
+          $file->move('uploads/', $newName);
+        }
+
+        $profilePictureModel->save([
+          'user_id' => $model->getUser($this->request->getPost('email'))['id'],
+          'image' => $newName,
+        ]);
 
         return redirect()->to('login');
 

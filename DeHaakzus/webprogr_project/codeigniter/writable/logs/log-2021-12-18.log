@@ -1,0 +1,92 @@
+CRITICAL - 2021-12-18 02:19:55 --> Trying to access array offset on value of type null
+#0 /app/app/Views/profile/profile.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(19): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-18 06:48:05 --> Call to undefined function App\Controllers\getUser()
+#0 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#1 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-18 06:49:21 --> Call to undefined function App\Controllers\getUser()
+#0 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#1 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-18 06:50:35 --> Call to undefined method App\Models\ProfileImageModel::getUser
+#0 /app/app/Controllers/Login.php(38): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#2 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-18 06:56:59 --> Call to a member function isValid() on null
+#0 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#1 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-18 06:57:45 --> Call to a member function isValid() on null
+#0 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#1 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-18 07:00:26 --> Call to a member function isValid() on null
+#0 /app/system/CodeIgniter.php(824): App\Controllers\Login->create()
+#1 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-18 07:13:26 --> Array to string conversion
+#0 /app/app/Views/profile/profile.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(25): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-18 07:15:44 --> Undefined array key "name"
+#0 /app/app/Views/profile/profile.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(25): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-18 07:18:06 --> Undefined variable $session
+#0 /app/app/Views/profile/profile.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(25): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-18 07:36:02 --> Undefined variable $session
+#0 /app/app/Views/templates/header.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Profile.php(38): view()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Profile->messages()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

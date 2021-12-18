@@ -15,10 +15,20 @@ class CartModel extends Model
   public function getCartFromUser()
   {
     $session = session();
-    $model = model(ProductModel::class);
 
-    return $model->getProductsFromMaker($session->get('user')['id']);
+    $cartData = $this->findAll();
+
+    $userCart = null;
+    foreach ($cartData as $cartItem) {
+      if ($cartItem['buyer_id'] == $session->get('user')['id']){
+        $userCart[] = $cartItem;
+      }
+    }
+
+    return $userCart;
   }
+
+
 
 
 

@@ -1,24 +1,32 @@
 <div class="container bg-light">
-  <div class="row g-3">
-      <?php if (! empty($products) && is_array($products)): ?>
+  <div class="row">
+  <?php if (! empty($products) && is_array($products)): ?>
         <?php
-          $imageCounter = 0;
-          foreach ($products as $product): ?>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card text-center mt-3 max-size">
-              <div class="card-body">
-                <img width=300vw src="<?php echo "uploads/".$images[$imageCounter++]['image']  ?>" alt="No Image Found">
-                <a href="/products/<?= esc($product['slug'], 'url') ?>">
-                  <h5 class="card-title"><?= esc($product['name']) ?></h5>
-                </a>
-                <p class="card-text"><?= esc($product['body']) ?></p>
+        $counter = 0;
+        foreach ($products as $product): ?>
+        <div class="col-12">
+          <div class="card mt-3">
+            <div class="card-body">
+              <img class="float-start col-3 col-md-2 col-lg-1" src="<?php echo "uploads/".$images[$counter]['image'] ?>" alt="no image found"> 
+              <h5 class="float-start"><?= esc($product['name']) ?></h5>
+              <div class="float-end">
+                <p><?php echo '€ '.$product['price'] ?></p>
+                <p><?php echo 'Aantal: '.$cartItem[$counter++]['amount'] ?></p>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-primary">+</button>
+                  <button type="button" class="btn btn-primary">-</button>
+                </div>
               </div>
+
             </div>
+            
           </div>
+          
+        </div>
         <?php endforeach; ?>
-      <?php else: ?>
+        <?php else: ?>
           <h3>No products</h3>
-          <p>Unable to find any products for you.</p>
-      <?php endif ?>
+          <p>No products added to your cart</p>
+        <?php endif ?>
   </div>
 </div>

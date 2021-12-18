@@ -19,7 +19,7 @@ class Products extends Controller
       }
 
       $data = [
-        'products' => $model->getProducts(),
+        'products' => $products,
         'images' => $images,
       ];
 

@@ -19,7 +19,7 @@
               <textarea type="text" class="form-control" name="description" rows="3"></textarea>
             </div>
             <div class="form-group mb-3">
-              <label for="inputImages">Afbeeldingen: </label>
+              <label for="inputImage">Afbeeldingen: </label>
               <input type="file" class="form-control-file" name="inputImage">
             </div>
             <div class="d-grid">
